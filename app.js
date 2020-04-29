@@ -8,8 +8,8 @@ const result_div = document.querySelector(".result");
 const rock_div = document.getElementById("0");
 const paper_div = document.getElementById("1");
 const scissors_div = document.getElementById("2");
-/*const smallUserWorld = "você".fontsize(3).sub();
-const smallCompWorld = "pc".fontsize(3).sub();*/
+const smallUserWord = "Você".fontsize(3).sub();
+const smallCompWord = "PC".fontsize(3).sub();
 
 function getComputerChoice() {
     /* 0 = Rock , 1 = Paper and 2 = Scissors */
@@ -26,13 +26,13 @@ function win(user,computer) {
     switch (user + computer)
     {
         case "02":
-            result_div.innerHTML = `${choices[user]} quebra ${choices[computer]}. Você ganhou !`
+            result_div.innerHTML = `${choices[user]}${smallUserWord} quebra ${choices[computer]}${smallCompWord}. Você ganhou !`
             break;
         case "21":
-            result_div.innerHTML = `${choices[user]} corta ${choices[computer]}. Você ganhou !`
+            result_div.innerHTML = `${choices[user]}${smallUserWord} corta ${choices[computer]}${smallCompWord}. Você ganhou !`
             break;
         case "10":
-            result_div.innerHTML = `${choices[user]} cobre ${choices[computer]}. Você ganhou !`
+            result_div.innerHTML = `${choices[user]}${smallUserWord} cobre ${choices[computer]}${smallCompWord}. Você ganhou !`
             break;
     }
     document.getElementById(user).classList.add('green-glow');
@@ -48,13 +48,13 @@ function lose(user,computer) {
     switch (user + computer)
     {
         case "01":
-            result_div.innerHTML = `${choices[computer]} cobre ${choices[user]}. Você perdeu !`
+            result_div.innerHTML = `${choices[computer]}${smallCompWord} cobre ${choices[user]}${smallUserWord}. Você perdeu !`
             break;
         case "12":
-            result_div.innerHTML = `${choices[computer]} corta ${choices[user]}. Você perdeu !`
+            result_div.innerHTML = `${choices[computer]}${smallCompWord} corta ${choices[user]}${smallUserWord}. Você perdeu !`
             break;
         case "20":
-            result_div.innerHTML = `${choices[computer]} quebra ${choices[user]}. Você perdeu !`
+            result_div.innerHTML = `${choices[computer]}${smallCompWord} quebra ${choices[user]}${smallUserWord}. Você perdeu !`
             break;
     }
     document.getElementById(computer).classList.add('green-glow');
