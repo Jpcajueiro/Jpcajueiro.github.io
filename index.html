@@ -7,33 +7,36 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1>Pedra Papel Tesoura</h1>
-        </header>
+        <div class="PPT">
+            <header>
+                <h1>Pedra Papel Tesoura</h1>
+            </header>
 
-        <div class="score-board">
-            <div id="user-label" class="badge">Você</div> 
-            <div id="computer-label" class="badge">PC</div>
-            <span id="user-score">0</span>:<span id="computer-score">0</span>
-        </div>
+            <div class="score-board">
+                <div id="user-label" class="badge">Você</div> 
+                <div id="computer-label" class="badge">PC</div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
 
-        <div class="result">
-            <p></p>
-        </div>
+            <div class="result">
+                <p></p>
+            </div>
 
-        <div class="choices">
-            <div class="choice" id="0">
-                <img src="imagens/pedra.png" alt=Pedra>
+            <div class="choices">
+                <div class="choice" id="0">
+                    <img src="imagens/pedra.png" alt=Pedra>
+                </div>
+                <div class="choice" id="1">
+                    <img src="imagens/papel.png" alt="Papel">
+                </div>
+                <div class="choice" id="2">
+                    <img src="imagens/tesoura.png" alt="Tesoura">
+                </div>
             </div>
-            <div class="choice" id="1">
-                <img src="imagens/papel.png" alt="Papel">
-            </div>
-            <div class="choice" id="2">
-                <img src="imagens/tesoura.png" alt="Tesoura">
-            </div>
+            
+            <p id="action-message">Faça sua escolha.</p>
+            <script src="app.js" charset="utf-8"></script>
+            <a href="page2.html">Clique aqui para Jogo da velha</a>
         </div>
-        
-        <p id="action-message">Faça sua escolha.</p>
-        <script src="app.js" charset="utf-8"></script>
     </body>
 </html>

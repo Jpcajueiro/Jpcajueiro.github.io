@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Véia</title>
+  
+  <link rel="stylesheet" href="styles2.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Jogo da Velha</h1>
+	</header>
+	<div class="score-board">
+		<div id="Player1-label" class="badge">Jogador 1</div> 
+		<div id="Player2-label" class="badge">Jogador 2</div>
+		<span id="Player1">0</span>:<span id="Player2">0</span>
+	</div>
+	<div class="TicTacToe">
+		<table>
+			<tr>
+				<td class="cell" id="0"></td>
+				<td class="cell" id="1"></td>
+				<td class="cell" id="2"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="3"></td>
+				<td class="cell" id="4"></td>
+				<td class="cell" id="5"></td>
+			</tr>
+			<tr>
+				<td class="cell" id="6"></td>
+				<td class="cell" id="7"></td>
+				<td class="cell" id="8"></td>
+			</tr>
+		</table>
+		<div class="endgame">
+			<p></p>
+		</div>
+		<script src="script.js"></script>
+	</div>
+	<button onClick="startGame()"  class="button" id="Button">Jogar Novamente</button>
+	<a href="index.html">Clique aqui para voltar</a>
+</body>
+</html>
