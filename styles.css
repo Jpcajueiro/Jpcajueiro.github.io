@@ -122,5 +122,8 @@ a {
     margin-top: 100px;
     margin-left: 40%;
     font-family: 'Roboto', sans-serif;
-    top: 630px;
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    top: 375px;
   }
